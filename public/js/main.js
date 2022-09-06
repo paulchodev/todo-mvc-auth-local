@@ -15,7 +15,8 @@ Array.from(todoComplete).forEach((el)=>{
 })
 
 async function deleteTodo(){
-    const todoId = this.parentNode.dataset.id
+    const todoId = this.parentNode.parentNode.dataset.id
+    console.log(todoId)
     try{
         const response = await fetch('todos/deleteTodo', {
             method: 'delete',
@@ -33,7 +34,7 @@ async function deleteTodo(){
 }
 
 async function markComplete(){
-    const todoId = this.parentNode.dataset.id
+    const todoId = this.parentNode.parentNode.dataset.id
     try{
         const response = await fetch('todos/markComplete', {
             method: 'put',
@@ -51,7 +52,8 @@ async function markComplete(){
 }
 
 async function markIncomplete(){
-    const todoId = this.parentNode.dataset.id
+    const todoId = this.parentNode.parentNode.dataset.id
+    console.log(todoId)
     try{
         const response = await fetch('todos/markIncomplete', {
             method: 'put',
