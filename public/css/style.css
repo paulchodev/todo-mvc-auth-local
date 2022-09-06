@@ -1,5 +1,63 @@
+body{
+  background-color: lightblue;
+}
+
 h1{
-    color: red;
+    color: darkblue;
+    text-align: center;
+}
+.todos-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todoItem {
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.todoItem > div {
+  display: flex;
+  flex-direction: column;
+
+}
+.todoItem > .todo-body > span + span{
+  width: 15em;
+  overflow-wrap: normal;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.todoItem > div + div{
+  margin-left: 30px;
+}
+.todoItem > div + div > span{
+  border-radius: 5px;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+.todoItem > div > span.low{
+  border: solid green 1px;
+  background-color: green;
+}
+.todoItem > div > span.medium{
+  border: solid yellow 1px;
+  background-color: yellow;
+}
+.todoItem > div > span.high{
+  border: solid red 1px;
+  background-color: red;
+}
+.del{
+  border: solid grey 1px;
+  background-color: grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.del > i{
+  display: flex;
+  justify-content: center;
 }
 .completed{
     text-decoration: line-through;
@@ -7,4 +65,14 @@ h1{
 }
 .not{
     text-decoration: underline;
+}
+h2{
+  text-align: center;
+}
+form{
+  text-align: center;
+}
+body > div{
+  padding: 1em;
+  text-align: center;
 }
