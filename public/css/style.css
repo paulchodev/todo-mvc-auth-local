@@ -1,10 +1,12 @@
 body{
-  background-color: lightblue;
+  background-color: #c6d8d3;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1{
-    color: darkblue;
+    color: #3a3335;
     text-align: center;
+    font-weight: 700;
 }
 .todos-container{
   display: flex;
@@ -26,8 +28,9 @@ h1{
   width: 15em;
   overflow-wrap: normal;
   font-size: 1.3em;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
+  color: #3a3335
 }
 .todoItem > div + div{
   margin-left: 30px;
@@ -38,20 +41,20 @@ h1{
   margin-bottom: 0.5em;
 }
 .todoItem > div > span.low{
-  border: solid green 1px;
-  background-color: green;
+  border: solid #fdf0d5 1px;
+  background-color: #fdf0d5;
 }
 .todoItem > div > span.medium{
-  border: solid yellow 1px;
-  background-color: yellow;
+  border: solid #f0544f 1px;
+  background-color: #f0544f;
 }
 .todoItem > div > span.high{
-  border: solid red 1px;
-  background-color: red;
+  border: solid #d81e5b 1px;
+  background-color: #d81e5b;
 }
 .del{
-  border: solid grey 1px;
-  background-color: grey;
+  border: solid #dfdce3 1px;
+  background-color: #dfdce3;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -61,13 +64,14 @@ h1{
 }
 .completed{
     text-decoration: line-through;
-    color: gray;
+    color: #dfdce3;
 }
 .not{
     text-decoration: underline;
 }
 h2{
   text-align: center;
+  color: #3a3335
 }
 form{
   text-align: center;
@@ -75,4 +79,10 @@ form{
 body > div{
   padding: 1em;
   text-align: center;
+}
+.todo-date{
+  color: #fdf0d5
+}
+.logout{
+  text-decoration: none;
 }
